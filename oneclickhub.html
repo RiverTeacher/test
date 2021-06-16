@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ウィルスの無料除去</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <section class="hero is-fullheight" style="background: url(cover.jpg) center">
+      <div class="hero-body" id="app">
+        <div class="container">
+          <div v-if="seen" class="notification">
+            <progress class="progress is-small is-primary" max="100"></progress>
+            <p class="is-size-4">{{ message }}</p>
+          </div>
+          <h1 class="title is-size-1">ウィルスを除去するために下記のボタンをクリックしてください。</h1>
+          <font color="yellow" size="5">利用者は世界で300万人以上！</font>
+          <p class="is-size-3">携帯を常に保護します</p>
+          <button v-on:click="move" class="button is-primary is-large">無料でウィルスを除去</button>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
